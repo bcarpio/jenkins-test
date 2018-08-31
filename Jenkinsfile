@@ -3,7 +3,7 @@ pipeline {
   agent {
     docker {
         reuseNode true
-        image 'bcarpio/terraform-kitchen'
+        image 'jenkins/jnlp-slave'
         label 'docker'
     }
   }
