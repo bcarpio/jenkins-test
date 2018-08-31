@@ -4,6 +4,7 @@ pipeline {
     docker {
         reuseNode true
         image 'bcarpio/terraform-kitchen'
+        label 'docker'
     }
   }
   options {
