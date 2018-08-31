@@ -18,7 +18,7 @@ pipeline {
         }
       }
     }
-    stage('get version') {
+    stage('echo version') {
       steps {
         echo "awesomeVersion: ${awesomeVersion}"
       }
