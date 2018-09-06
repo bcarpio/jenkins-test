@@ -1,10 +1,7 @@
 def awesomeVersion = 'UNKNOWN'
 pipeline {
   agent {
-    docker {
-        reuseNode true
-        image 'jenkins/jnlp-slave'
-        label 'docker'
+      label 'docker'
     }
   }
   options {
