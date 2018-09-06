@@ -1,8 +1,7 @@
 def awesomeVersion = 'UNKNOWN'
 pipeline {
   agent {
-      label 'docker'
-    }
+    label 'docker'
   }
   options {
     buildDiscarder(logRotator(numToKeepStr: '10'))
